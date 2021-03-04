@@ -12,7 +12,7 @@
         android:gravity="center">
 
         <Button
-            android:id="@+id/ButtonClean"
+            android:id="@+id/buttonClean"
             android:layout_width="wrap_content"
             android:layout_height="@dimen/buttonHeight"
             android:layout_margin="@dimen/marginButton"
@@ -22,7 +22,7 @@
             tools:ignore="ButtonStyle" />
 
         <Button
-            android:id="@+id/ButtonMPlus"
+            android:id="@+id/buttonMPlus"
             android:layout_width="wrap_content"
             android:layout_height="@dimen/buttonHeight"
             android:layout_margin="@dimen/marginButton"
@@ -32,7 +32,7 @@
             tools:ignore="ButtonStyle" />
 
         <Button
-            android:id="@+id/ButtonMMinus"
+            android:id="@+id/buttonMMinus"
             android:layout_width="wrap_content"
             android:layout_height="@dimen/buttonHeight"
             android:layout_margin="@dimen/marginButton"
@@ -42,7 +42,7 @@
             tools:ignore="ButtonStyle" />
 
         <Button
-            android:id="@+id/ButtonSquareRoot"
+            android:id="@+id/buttonSquareRoot"
             android:layout_width="wrap_content"
             android:layout_height="@dimen/buttonHeight"
             android:layout_margin="@dimen/marginButton"
@@ -57,7 +57,7 @@
         android:layout_height="match_parent"
         android:gravity="center">
         <Button
-            android:id="@+id/Button1"
+            android:id="@+id/button1"
             android:layout_width="wrap_content"
             android:layout_height="@dimen/buttonHeight"
             android:layout_margin="@dimen/marginButton"
@@ -67,17 +67,18 @@
             tools:ignore="ButtonStyle" />
 
         <Button
-            android:id="@+id/Button2"
+            android:id="@+id/button2"
             android:layout_width="wrap_content"
             android:layout_height="@dimen/buttonHeight"
             android:layout_margin="@dimen/marginButton"
             android:backgroundTint="@android:color/holo_green_dark"
             android:text="@string/Button2"
             android:textSize="@dimen/buttonFont"
+            android:onClick="button_onClick"
             tools:ignore="ButtonStyle" />
 
         <Button
-            android:id="@+id/Button3"
+            android:id="@+id/button3"
             android:layout_width="wrap_content"
             android:layout_height="@dimen/buttonHeight"
             android:layout_margin="@dimen/marginButton"
@@ -87,7 +88,7 @@
             tools:ignore="ButtonStyle" />
 
         <Button
-            android:id="@+id/ButtonPlus"
+            android:id="@+id/buttonPlus"
             android:layout_width="wrap_content"
             android:layout_height="@dimen/buttonHeight"
             android:layout_margin="@dimen/marginButton"
@@ -103,7 +104,7 @@
         android:layout_height="match_parent"
         android:gravity="center">
         <Button
-            android:id="@+id/Button4"
+            android:id="@+id/button4"
             android:layout_width="wrap_content"
             android:layout_height="@dimen/buttonHeight"
             android:layout_margin="@dimen/marginButton"
@@ -113,7 +114,7 @@
             tools:ignore="ButtonStyle" />
 
         <Button
-            android:id="@+id/Button5"
+            android:id="@+id/button5"
             android:layout_width="wrap_content"
             android:layout_height="@dimen/buttonHeight"
             android:layout_margin="@dimen/marginButton"
@@ -123,7 +124,7 @@
             tools:ignore="ButtonStyle" />
 
         <Button
-            android:id="@+id/Button6"
+            android:id="@+id/button6"
             android:layout_width="wrap_content"
             android:layout_height="@dimen/buttonHeight"
             android:layout_margin="@dimen/marginButton"
@@ -133,7 +134,7 @@
             tools:ignore="ButtonStyle" />
 
         <Button
-            android:id="@+id/ButtonMinus"
+            android:id="@+id/buttonMinus"
             android:layout_width="wrap_content"
             android:layout_height="@dimen/buttonHeight"
             android:layout_margin="@dimen/marginButton"
@@ -149,7 +150,7 @@
         android:layout_height="match_parent"
         android:gravity="center">
         <Button
-            android:id="@+id/Button7"
+            android:id="@+id/button7"
             android:layout_width="wrap_content"
             android:layout_height="@dimen/buttonHeight"
             android:layout_margin="@dimen/marginButton"
@@ -159,7 +160,7 @@
             tools:ignore="ButtonStyle" />
 
         <Button
-            android:id="@+id/Button8"
+            android:id="@+id/button8"
             android:layout_width="wrap_content"
             android:layout_height="@dimen/buttonHeight"
             android:layout_margin="@dimen/marginButton"
@@ -169,7 +170,7 @@
             tools:ignore="ButtonStyle" />
 
         <Button
-            android:id="@+id/Button9"
+            android:id="@+id/button9"
             android:layout_width="wrap_content"
             android:layout_height="@dimen/buttonHeight"
             android:layout_margin="@dimen/marginButton"
@@ -179,7 +180,7 @@
             tools:ignore="ButtonStyle" />
 
         <Button
-            android:id="@+id/ButtonMultiply"
+            android:id="@+id/buttonMultiply"
             android:layout_width="wrap_content"
             android:layout_height="@dimen/buttonHeight"
             android:layout_margin="@dimen/marginButton"
@@ -195,7 +196,7 @@
         android:layout_height="match_parent"
         android:gravity="center"        >
         <Button
-            android:id="@+id/Button0"
+            android:id="@+id/button0"
             android:layout_width="wrap_content"
             android:layout_height="@dimen/buttonHeight"
             android:layout_margin="@dimen/marginButton"
@@ -206,7 +207,7 @@
             tools:ignore="ButtonStyle" />
 
         <Button
-            android:id="@+id/ButtonPeriod"
+            android:id="@+id/buttonPeriod"
             android:layout_width="wrap_content"
             android:layout_height="@dimen/buttonHeight"
             android:layout_margin="@dimen/marginButton"
@@ -216,7 +217,7 @@
             tools:ignore="ButtonStyle" />
 
         <Button
-            android:id="@+id/ButtonDivide"
+            android:id="@+id/buttonDivide"
             android:layout_width="wrap_content"
             android:layout_height="@dimen/buttonHeight"
             android:layout_margin="@dimen/marginButton"
@@ -232,7 +233,7 @@
         android:layout_height="match_parent"
         android:gravity="center">
         <Button
-            android:id="@+id/ButtonEqually"
+            android:id="@+id/buttonEqually"
             android:layout_width="wrap_content"
             android:layout_height="@dimen/buttonHeight"
             android:layout_margin="@dimen/marginButton"
