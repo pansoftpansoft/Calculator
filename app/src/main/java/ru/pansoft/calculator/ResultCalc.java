@@ -16,25 +16,23 @@ public class ResultCalc {
     ArrayList<String> allOperation = new ArrayList<>();
 
     public void setTextMonitor(String symbol) {
+
         if (clearExpression) {
             clearExpression = false;
             expression = "";
         }
-        Log.e("1 symbol", symbol);
+
         if (Arrays.asList(dataOperation).indexOf(symbol) >= 0) {
             //Если ввели операцию проверяем последний символ на цифру
             Log.e("2 symbol", symbol);
-
             if (Arrays.asList(dataNumber).indexOf(expression.substring(expression.length() - 1)) >= 0) {
                 expression += symbol;
                 if (symbol.equals("=")) {
                     calc();
                 }
             } else {
-                //err
                 return;
             }
-
         } else {
             int point = expression.lastIndexOf('.');
             Log.e("point", Integer.toString(point));
@@ -57,7 +55,6 @@ public class ResultCalc {
                         return;
                     }
                 }
-
             } else {
                 expression += symbol;
             }
@@ -73,9 +70,7 @@ public class ResultCalc {
         String resultString = "";
         String s1 = "";
         String operation = "";
-
         Integer currentNumber = 0;
-
         String[] arrayC = expression.split("");
         for (String c : arrayC) {
             if (Arrays.asList(dataNumber).indexOf(c) >= 0) {
