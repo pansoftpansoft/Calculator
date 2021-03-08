@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:theme="@style/KeyBoard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_columnSpan="4"
+    android:gravity="center">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonClean"
+            android:theme="@style/KeyBoardRed"
+            android:text="@string/ButtonClean"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonMPlus"
+            android:theme="@style/KeyBoardGreen"
+            android:text="@string/ButtonMPlus"
+            tools:ignore="ButtonStyle" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonMMinus"
+            android:theme="@style/KeyBoardGreen"
+            android:text="@string/ButtonMMinus"
+            tools:ignore="ButtonStyle" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonSquareRoot"
+            android:theme="@style/KeyBoardGreen"
+            android:text="@string/ButtonSquareRoot"
+            tools:ignore="ButtonStyle" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button1"
+            android:text="@string/Button1"
+            tools:ignore="ButtonStyle" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button2"
+            android:text="@string/Button2"
+            tools:ignore="ButtonStyle" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button3"
+            android:text="@string/Button3"
+            tools:ignore="ButtonStyle" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonPlus"
+            android:theme="@style/KeyBoardGreen"
+            android:text="@string/ButtonPlus"
+            tools:ignore="ButtonStyle" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button4"
+            android:text="@string/Button4"
+            tools:ignore="ButtonStyle" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button5"
+            android:text="@string/Button5"
+            tools:ignore="ButtonStyle" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button6"
+            android:text="@string/Button6"
+            tools:ignore="ButtonStyle" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonMinus"
+            android:theme="@style/KeyBoardGreen"
+            android:text="@string/ButtonMinus"
+            tools:ignore="ButtonStyle" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button7"
+            android:text="@string/Button7"
+            tools:ignore="ButtonStyle" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button8"
+            android:text="@string/Button8"
+            tools:ignore="ButtonStyle" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button9"
+            android:text="@string/Button9"
+            android:textStyle="bold|italic"
+            tools:ignore="ButtonStyle" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonMultiply"
+            android:theme="@style/KeyBoardGreen"
+            android:text="@string/ButtonMultiply"
+            tools:ignore="ButtonStyle" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button0"
+            android:layout_span="2"
+            android:text="@string/Button0"
+            tools:ignore="ButtonStyle" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonPeriod"
+            android:text="@string/ButtonPeriod"
+            tools:ignore="ButtonStyle" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonDivide"
+            android:theme="@style/KeyBoardGreen"
+            android:text="@string/ButtonDivide"
+            tools:ignore="ButtonStyle" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonEqually"
+            android:theme="@style/KeyBoardGreen"
+            android:layout_span="4"
+            android:text="@string/ButtonEqually"
+            android:textSize="@dimen/buttonFont" />
+    </TableRow>
+
+</TableLayout>
