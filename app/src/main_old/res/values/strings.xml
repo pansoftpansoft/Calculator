@@ -22,8 +22,4 @@
     <string name="ButtonMPlus" translatable="false">M+</string>
     <string name="ButtonMMinus" translatable="false">M-</string>
     <string name="ButtonSquareRoot" translatable="false">√</string>
-    <string name="SwitchSetting">Dark ot Light</string>
-    <string name="TitleSelectTheme">Theme of select</string>
-    <string name="ButtonSettings">Settings</string>
-    <string name="buttonSet">Set</string>
 </resources>

@@ -1,10 +1,7 @@
 package ru.pansoft.calculator;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.app.AppCompatDelegate;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -13,20 +10,13 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    public static final String MY_RESULT = "0";
-    public static final String KEY_RESULT = MainActivity.class.getCanonicalName() + ".ResultCalc";
 
-    public boolean mLightNight = false;
-    private String KEY_LN = "KEY_LN";
-
-
-    private ResultCalc resultCalc = new ResultCalc();
+    ResultCalc resultCalc = new ResultCalc();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         initView();
     }
 
@@ -63,36 +53,6 @@ public class MainActivity extends AppCompatActivity {
         buttonPeriod.setOnClickListener(button_onClick);
         Button buttonEqually = findViewById(R.id.buttonEqually);
         buttonEqually.setOnClickListener(button_onClick);
-        Button ButtonSettings = findViewById(R.id.ButtonSettings);
-        ButtonSettings.setOnClickListener(buttonSettings_onClick);
-
-    }
-
-    public View.OnClickListener buttonSettings_onClick = new View.OnClickListener() {
-        @Override
-        public void onClick(View view) {
-
-            Intent intent = new Intent(MainActivity.this, SettingActivity.class);
-            intent.putExtra(KEY_LN, mLightNight);
-            startActivityForResult(intent, 1);
-
-        }
-    };
-
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-        Log.e("01", "_themSelect");
-        if (data != null){
-            mLightNight = data.getBooleanExtra(KEY_LN,false);
-            Log.e("02", String.valueOf(mLightNight));
-            Log.e("mLightNight = " , String.valueOf(mLightNight));
-            if (mLightNight) {
-                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
-            } else {
-                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
-            }
-            recreate();
-        }
     }
 
     public View.OnClickListener button_onClick = new View.OnClickListener() {
@@ -110,23 +70,8 @@ public class MainActivity extends AppCompatActivity {
         textView.setText(resultCalc.expression);
     }
 
-    @Override
-    protected void onSaveInstanceState(@NonNull Bundle outState) {
-        super.onSaveInstanceState(outState);
-        Log.e(resultCalc.expression , "_resultCalc.expression");
-        outState.putString(KEY_RESULT, resultCalc.expression);
-        Log.e("onSaveLightNight=" , String.valueOf(mLightNight));
-        outState.putBoolean(KEY_LN, mLightNight);
-    }
-
-    @Override
-    protected void onRestoreInstanceState(@NonNull Bundle savedInstanceState) {
-        super.onRestoreInstanceState(savedInstanceState);
-        resultCalc.expression = savedInstanceState.getString(KEY_RESULT, "0");
-        mLightNight = savedInstanceState.getBoolean(KEY_LN, false);
-        Log.e("onRestoreLightNight=" , String.valueOf(mLightNight));
-        TextView textView = findViewById(R.id.textView);
-        Log.e(resultCalc.expression , "resultCalc.expression_");
-        textView.setText(resultCalc.expression);
-    }
+//    private void setTextMonitor(String s){
+//        resultCalc.setTextMonitor(s);
+//        setResultOnScreen();
+//    }
 }

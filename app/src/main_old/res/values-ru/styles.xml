@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!--        <item name="android:textSize">@dimen/buttonFont</item>-->
+        <!--        <item name="android:layout_height">@dimen/buttonHeight</item>-->
+        <!--        <item name="android:layout_margin">@dimen/marginButton</item>-->
+        <!--        <item name="android:layout_width">@dimen/wrap_content</item>-->
+    </style>
+
+    <style name="KeyBoard" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="android:textSize">@dimen/buttonFont</item>
+        <item name="android:layout_height">@dimen/buttonHeight</item>
+        <item name="android:layout_margin">@dimen/marginButton</item>
+        <item name="android:layout_width">@dimen/wrap_content</item>
+    </style>
+    <style name="KeyBoardRed" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="android:textSize">@dimen/buttonFont</item>
+        <item name="android:backgroundTint">@color/button_red</item>
+        <item name="android:layout_height">@dimen/buttonHeight</item>
+        <item name="android:layout_margin">@dimen/marginButton</item>
+        <item name="android:layout_width">@dimen/wrap_content</item>
+    </style>
+    <style name="KeyBoardGreen" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="android:textSize">@dimen/buttonFont</item>
+        <item name="android:backgroundTint">@color/button_green</item>
+        <item name="android:layout_height">@dimen/buttonHeight</item>
+        <item name="android:layout_margin">@dimen/marginButton</item>
+        <item name="android:layout_width">@dimen/wrap_content</item>
+    </style>
+</resources>
