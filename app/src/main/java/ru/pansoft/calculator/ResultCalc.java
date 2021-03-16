@@ -14,7 +14,6 @@ public class ResultCalc {
     String[] dataNumber = {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "."};
     ArrayList<Integer> allNumber = new ArrayList<>();
     ArrayList<String> allOperation = new ArrayList<>();
-    //Доделать вычисления
 
     public void setTextMonitor(String symbol) {
 

@@ -2,4 +2,8 @@
 <resources>
     <string name="app_name">Калькулятор</string>
     <string name="calculation_result">Результат вычисления</string>
+    <string name="SwitchSetting">Темная и светлая</string>
+    <string name="TitleSelectTheme">Выберите тему</string>
+    <string name="ButtonSettings">Настройки</string>
+    <string name="buttonSet">Применить</string>
 </resources>
